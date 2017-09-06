@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="description" content="iti Project">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Start Of menu-->
+        <div class="menu">
+            <i class="fa fa-bars fa-3x" id="my-menu" onclick="openOverlay()" onmouseover="this.style.opacity = '.7'" onmouseout="this.style.opacity = '1'"></i>
+            <div class="navbar" id="navbar">
+                <span onclick="closeOverlay()">&times;</span>
+                <img src="images/Logo_1502808088412.png" alt="logo-image" width="180px" height="70px">
+                <a href="#" class="active">Home</a>
+                <a href="#about-us" style="font-size:20px">About Us</a>
+                <a href="#services" style="font-size:20px">Services</a>
+                <a href="#portfolio" style="font-size:20px">Portfolio</a>
+                <a href="#skills" style="font-size:20px">Skills</a>
+                <a href="plans.html" style="border-bottom: 2px solid #6CB670;">Our Plans</a>
+                <a href="contact.html" style="border-bottom: 2px solid #6CB670;">Contact Us</a>
+            </div>
+        </div>
+        <!--End Of menu-->
+        
+        <!--Start Of Header-->
+        <header id="header">
+            <div class="container">
+                <div id="intro-text" class="intro-text">
+                    <img src="images/Logo_1502808088412.png" alt="logo-image" height="150px" width="465px">
+                    <h1>WELCOME TO WEB4U</h1>
+                </div>
+            </div>
+            <i class="fa fa-chevron-left fa-3x" id="left" onclick="LastSlider()"></i>
+            <i class="fa fa-chevron-right  fa-3x" id="right" onclick="nextSlider()"></i>
+        </header>
+        <!--End Of Header-->
+        
+        <!--Start Of About Us-->
+        <div class="about-us" id="about-us">
+            <div class="container">
+                <h1>About<span> Us</span></h1>
+                <mark>&nbsp;</mark>
+                <div class="content">
+                    <div class="box" onmouseover="hovFirst()" onmouseout="outFirst()">
+                        <div class="icon">
+                            <i class="fa fa-lightbulb-o fa-4x" id="icon1"></i>
+                            <h3>Creative</h3>
+                        </div>
+                        <div class="text">
+                        <p>WEB4U offers unique and creative solutions that meet your expectations, Deliveryour brand image and achive your business goals.</p>
+                        </div>
+                    </div>
+                    <div class="box" onmouseover="hovSecond()" onmouseout="outSecond()">
+                        <div class="icon">
+                            <i class="fa fa-bookmark-o fa-4x" id="icon2"></i>
+                            <h3>Excellence</h3>
+                        </div>
+                        <div class="text">
+                        <p>WEB4U has a highly motivated team that always provides you with professional and skilled services with excellent quality projects.</p>
+                        </div>
+                    </div>
+                    <div class="box" onmouseover="hovThird()" onmouseout="outThird()">
+                        <div class="icon">
+                            <i class="fa fa-line-chart fa-4x" id="icon3"></i>
+                            <h3>Up to date</h3>
+                        </div>
+                        <div class="text">
+                        <p>Technology training doesn’t stop. WEB4U always uses the most up to date technology to build and manage websites.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Start Of Features-->
+        <div class="features">
+            <div class="container">
+                <div class="image">
+                    <img src="images/feature.png" alt="feature-image" width="500px" height="285px">
+                </div>
+                <div class="text">
+                    <h3>Main Features Of WEB4U</h3>
+                    <p>WEB4U’s concept is to make every website that they build attractive and unique, to stand out from the crowd. , Modern Design that brings out the best in your business. Good designs for great impact.</p>
+
+                    <p>WEB4U designs effective and reliable websites that lead to higher visitor engagement, retention and conversions, More business opportunities, and more revenue</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--Start Of More-about-->
+        <div class="more-about">
+            <div class="container">
+                <div class="content">
+                    <h1>320</h1>
+                    <i class="fa fa-users fa-3x"></i>
+                    <h3>Happy Clients</h3>
+                </div>
+                <div class="content">
+                    <h1>565</h1>
+                    <i class="fa fa-check-square fa-3x"></i>
+                    <h3>Projects completed</h3>
+                </div>
+                <div class="content">
+                    <h1>95&#37;</h1>
+                    <i class="fa fa-thumbs-up fa-3x"></i>
+                    <h3>Positive feedback</h3>
+                </div>
+                <div class="content">
+                    <h1>4500</h1>
+                    <i class="fa fa-clock-o fa-3x"></i>
+                    <h3>Hours Of Work</h3>
+                </div>
+            </div>
+        </div>
+        <!--End Of About Us-->
+        
+        <!--Start Of Services-->
+        <div class="services" id="services">
+            <div class="container">
+                <h1>Our<span> Services</span></h1>
+                <mark>&nbsp;</mark>
+                
+                <div class="content">
+                    <div class="serv">
+                        <i class="fa fa-desktop fa-5x"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Crafting your site to provide optimal viewing on every device With new mediums of communication expanding quickly we understand the importance to reach all types of users effectively</p>
+                    </div>
+                    
+                    <div class="serv">
+                        <i class="fa fa-shopping-cart fa-5x"></i>
+                        <h3>E-commerce</h3>
+                        <p>Our eCommerce platform to build an open-source technology that gives you most remarkable control over the display, content and functionality of your online stores.</p>
+                    </div>
+                    
+                    <div class="serv">
+                        <i class="fa fa-cogs fa-5x"></i>
+                        <h3>SUPPORT AND IMPROVEMENT</h3>
+                        <p>Optimizing your web business by monitoring. Our website monitoring will help you to deliver customers the best web experience by continuous targeting and diagnosing your site’s performance.</p>
+                    </div>
+                    
+                    <div class="serv">
+                        <i class="fa fa-search fa-5x"></i>
+                        <h3>Search Engine Optimization</h3>
+                        <p>(SEO) is a tool that takes your website to the top of the search results of Google, Yahoo and Bing. Customers find you when they search online for your products.</p>
+                    </div>
+                    
+                    <div class="serv">
+                        <i class="fa fa-wordpress fa-5x"></i>
+                        <h3>WordPress</h3>
+                        <p>WordPress Makes It is easy to add and manage content on sites like editing pages, linking web pages to a certain domain, updating content, uploading images, multimedia and much more</p>
+                    </div>
+                    
+                    <div class="serv">
+                        <i class="fa fa-android fa-5x"></i>
+                        <h3>Apps Development</h3>
+                        <p>We offer A complete integration between mobile app and online website can give your business the boost needed to go beyond reaching clients barriers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Of Services-->
+        
+        <!--Start Of Portfolio-->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <h1>Our<span> Works</span></h1>
+                <mark>&nbsp;</mark>
+                <div class="my-options">
+                    <button id="all" onclick="showAll()">All</button>
+                    <button id="mobile-app" onclick="showMobileApp()">Mobile App</button>
+                    <button id="web-design" onclick="showWebDesign()">Web Design</button>
+                    <button id="photoshop" onclick="showPhotoshop()">Photoshop</button>
+                    <button id="illustrator" onclick="showIllustrator()">Illustrator</button>
+                </div>
+                
+                <div class="content">
+                    
+                    <div class="parent" id="num-1">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-2">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-3">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-4">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-5">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-6">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-7">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-8">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-9">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-10">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-11">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="parent" id="num-12">
+                        <div class="child">
+                            <h3>Portfolio Title</h3>
+                            <i class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Portfolio Overlay-->
+            <div class="p-overlay" id="work-overlay">
+                <h2>Portfolio Title</h2>
+                <img src="images/city.jpg" alt="potfolio-image" width="500px" height="400px" id="work-image">
+                <br>
+                <button>More Details</button>
+                <span id="exit">&times;</span>
+            </div>
+        <!--End Of Portfolio-->
+        
+        <!--Start Of Skills-->
+        <div class="skills" id="skills">
+            <div class="container">
+                <h1>Our<span> Skills</span></h1>
+                <mark>&nbsp;</mark>
+                <div class="progressbar">
+                    <p>Web Design</p>
+                    <div style="width:100%" class="d1">&nbsp;</div>
+                    <p>HTML&amp;CSS</p>
+                    <div style="width:90%" class="d2">&nbsp;</div>
+                    <p>Wordpress</p>
+                    <div style="width:80%" class="d3">&nbsp;</div>
+                    <p>Joomla</p>
+                    <div style="width:95%" class="d4">&nbsp;</div>
+                    <p>E-commerce</p>
+                    <div style="width:85%" class="d5">&nbsp;</div>
+                </div>
+                
+                <div class="slider">
+                    <img width="560px" height="371px" src="images/5.png" id="image-skills">
+                </div>
+            </div>
+        </div>
+        <!--End Of Skills-->
+        
+        <!--Start Of our-plans-->
+        <div class="our-plans" id="our-plans">
+            <div class="container">
+                <div class="text">
+                    <span></span>
+                    <h2>About Our Plans</h2>
+                    <p>Click To Know About Our Plans And To Know Our Process And Pricing, We Wish To Make You Happy.</p>
+                </div>
+                <div class="my-link">
+                    <a href="plans.html">Let's Start Now</a>
+                </div>
+            </div>
+        </div>
+        <!--End Of our-plans-->
+        
+        <!--Start Of Footer-->
+        <div class="footer">
+            <a href="#"><i class="fa fa-facebook-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-youtube-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-5x"></i></a>
+            <br><br>
+            <img src="images/Logo_1502808088412.png" alt="logo-image" width="180px" height="70px">
+            <br>
+            Design by Ahmed Abd ELhafiz. Copyright © 2017. All Rights Reserved
+        </div>
+        <!--End Of Footer-->
+        
+         <!--SCroll To Top-->
+        <span class="scroll-span" id="scroll-span" title="Go To Top">
+            <i class="fa fa-chevron-up"></i>
+        </span>
+        <!--End SCroll-->
+        
+        <script>
+            function openOverlay() 
+            {
+                var x = document.getElementById("navbar");
+                
+                x.style.transform = "scale(1)";
+                
+                x.style.transition = ".5s";
+                
+                var hide = document.getElementById("my-menu");
+                
+                hide.style.opacity = "0";
+            }
+            function closeOverlay() 
+            {
+                var x = document.getElementById("navbar");
+                
+                x.style.transform = "scale(0)";
+                
+                var hide = document.getElementById("my-menu");
+                
+                hide.style.opacity = "1";
+            }
+            
+            function nextSlider() 
+            {  
+                var x = document.getElementById("intro-text");
+                var slideCover = document.getElementById("header");
+                x.innerHTML = "<h1>We Structure, Design, Build, and Grow Your Website</h1><p>Clean and Professional Design</p>";
+                slideCover.style.backgroundImage = "url(images/cover.jpg)";
+            }
+            
+            function LastSlider() 
+            {  
+                var x = document.getElementById("intro-text");
+                var slideCover = document.getElementById("header");
+                x.innerHTML = '<img src="images/Logo_1502808088412.png" alt="logo-image" height="150px" width="465px"><h1>WELCOME TO WEB4U</h1>';
+                slideCover.style.backgroundImage = "url(images/cover1.jpg)";
+            }
+            
+            var firstIcon = document.getElementById("icon1");
+            
+            var secondIcon = document.getElementById("icon2");
+            
+            var thirdIcon = document.getElementById("icon3");
+            
+            function hovFirst() 
+            {
+                firstIcon.className = "fa fa-lightbulb-o fa-5x";
+                
+                firstIcon.style.transition = ".3s";
+            }
+            
+            function outFirst() 
+            {
+                firstIcon.className = "fa fa-lightbulb-o fa-4x";
+            }
+            
+            function hovSecond() 
+            {
+                secondIcon.className = "fa fa-bookmark-o fa-5x";
+                
+                secondIcon.style.transition = ".3s";
+            }
+            
+            function outSecond() 
+            {
+                secondIcon.className = "fa fa-bookmark-o fa-4x";
+            }
+            
+            function hovThird() {
+                thirdIcon.className = "fa fa-line-chart fa-5x";
+                
+                thirdIcon.style.transition = ".3s";
+            }
+            
+            function outThird() 
+            {
+                thirdIcon.className = "fa fa-line-chart fa-4x";
+            }
+            
+          
+            /*Scroll span*/
+            window.onscroll = function() 
+            {
+                console.log(window.pageYOffset);
+            }
+            
+            var goTop = document.getElementById("scroll-span");
+            
+            window.onload = function() 
+            {
+                goTop.style.display = "none";
+            }
+            
+            window.onscroll = function() 
+            {
+                if(window.pageYOffset < 200) 
+                {
+                    goTop.style.display = "none";
+                } 
+                else 
+                {
+                    goTop.style.display = "block";
+                }
+            }
+            
+            goTop.onclick = function() 
+            {
+                window.scrollTo(0, 0);
+            }
+            /*End Scroll*/
+            
+            /*Start Portfolio*/
+            var all = document.getElementById("all"), 
+                mobileApp = document.getElementById("mobile-app"), 
+                webDesign = document.getElementById("web-design"), 
+                photoshop = document.getElementById("photoshop"), 
+                illustrator = document.getElementById("illustrator");
+            
+            var p1 = document.getElementById("num-1"), 
+                p2 = document.getElementById("num-2"), 
+                p3 = document.getElementById("num-3"), 
+                p4 = document.getElementById("num-4"), 
+                p5 = document.getElementById("num-5"), 
+                p6 = document.getElementById("num-6"), 
+                p7 = document.getElementById("num-7"), 
+                p8 = document.getElementById("num-8"), 
+                p9 = document.getElementById("num-9"), 
+                p10 = document.getElementById("num-10"), 
+                p11 = document.getElementById("num-11"), 
+                p12 = document.getElementById("num-12");
+            
+            function showAll() {
+                p1.style.display = "block";
+                p2.style.display = "block";
+                p3.style.display = "block";
+                p4.style.display = "block";
+                p5.style.display = "block";
+                p6.style.display = "block";
+                p7.style.display = "block";
+                p8.style.display = "block";
+                p9.style.display = "block";
+                p10.style.display = "block";
+                p11.style.display = "block";
+                p12.style.display = "block";
+            }
+            
+            function showMobileApp() {
+                p1.style.display = "none";
+                p2.style.display = "none";
+                p3.style.display = "none";
+                p4.style.display = "none";
+                p5.style.display = "none";
+                p6.style.display = "none";
+                p7.style.display = "none";
+                p8.style.display = "none";
+                p9.style.display = "none";
+                p10.style.display = "block";
+                p11.style.display = "block";
+                p12.style.display = "block";
+            }
+            
+            function showWebDesign() {
+                p1.style.display = "none";
+                p2.style.display = "none";
+                p3.style.display = "none";
+                p4.style.display = "block";
+                p5.style.display = "block";
+                p6.style.display = "block";
+                p7.style.display = "block";
+                p8.style.display = "none";
+                p9.style.display = "none";
+                p10.style.display = "none";
+                p11.style.display = "none";
+                p12.style.display = "none";
+            }
+            
+            function showPhotoshop() {
+                p1.style.display = "block";
+                p2.style.display = "block";
+                p3.style.display = "none";
+                p4.style.display = "none";
+                p5.style.display = "none";
+                p6.style.display = "none";
+                p7.style.display = "none";
+                p8.style.display = "block";
+                p9.style.display = "none";
+                p10.style.display = "none";
+                p11.style.display = "none";
+                p12.style.display = "none";
+            }
+            
+            function showIllustrator() {
+                p1.style.display = "none";
+                p2.style.display = "none";
+                p3.style.display = "block";
+                p4.style.display = "none";
+                p5.style.display = "none";
+                p6.style.display = "none";
+                p7.style.display = "none";
+                p8.style.display = "none";
+                p9.style.display = "block";
+                p10.style.display = "none";
+                p11.style.display = "none";
+                p12.style.display = "none";
+            }
+            
+            var portfolioOverlay = document.getElementById("work-overlay");
+            var portfolioImage = document.getElementById("work-image");
+            
+            p1.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-1.jpg";
+            }
+            p2.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-2.jpg";
+            }
+            p3.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-3.jpg";
+            }
+            p4.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-4.jpg";
+            }
+            p5.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-5.jpg";
+            }
+            p6.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-6.jpg";
+            }
+            p7.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-7.jpg";
+            }
+            p8.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-8.jpg";
+            }
+            p9.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-9.jpg";
+            }
+            p10.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-10.jpg";
+            }
+            p11.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-11.jpg";
+            }
+            p12.onclick = function () 
+            {
+                portfolioOverlay.style.transform = "scale(1)";
+                portfolioImage.src = "images/item-12.jpg";
+            }
+            
+            var exitOverlay = document.getElementById("exit");
+            exitOverlay.onclick = function() 
+            {
+                portfolioOverlay.style.transform = "scale(0)";
+            }
+            /*End Portfolio*/
+            
+            var imageArray = ["images/5.png",
+                              "images/4.jpg",
+                              "images/3.png",
+                              "images/2.jpg",
+                              "images/1.jpg"
+                             ];
+            
+            var imageSkills = document.getElementById("image-skills"); 
+            var currentImage = 0;
+            
+            function swap() {
+                currentImage++;
+                if(currentImage == 5) 
+                {
+                    currentImage = 0; 
+                }
+                
+                imageSkills.src = imageArray[currentImage];
+            }
+            
+            window.onload = setInterval("swap()", "3000");
+        </script>
+        
+    </body>
+</html>

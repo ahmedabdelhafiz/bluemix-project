@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="description" content="iti Project">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/style3.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+      #map 
+        {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+        }
+    </style>
+    </head>
+    <body>
+        <!--Start Of menu-->
+        <div class="menu">
+            <i class="fa fa-bars fa-3x" id="my-menu" onclick="openMenu()" onmouseover="this.style.opacity = '.7'" onmouseout="this.style.opacity = '1'"></i>
+            <div class="navbar" id="navbar">
+                <span onclick="closeMenu()">&times;</span>
+                <img src="images/Logo_1502808088412.png" alt="logo-image" width="180px" height="70px">
+                <a href="index.html" style="border-bottom: 2px solid #6CB670;">Home</a>
+                <a href="plans.html" style="border-bottom: 2px solid #6CB670;">Our Plans</a>
+                <a href="#" class="active" style="border-bottom: 2px solid #6CB670;">Contact Us</a>
+            </div>
+        </div>
+        <!--End Of menu-->
+        
+        <!--Start Of contact-->
+         <div class="contact">
+            <div class="container">
+                <h1>Get In<span> Touch</span></h1>
+                <mark>&nbsp;</mark>
+                <h2>Hello. What can we help you with?</h2>
+            
+                <form name="register">
+                    <input type="text" name="name" placeholder="Name" id="username" required>
+
+                    <i class="fa fa-exclamation-triangle" id="user"></i>
+                    <br>
+                    <input type="password" name="password" placeholder="Password" id="password" required>
+
+                    <i class="fa fa-eye-slash" id="pass" title="Show Password"></i>
+                    <br>
+                    <input type="text" name="email" placeholder="Email" id="email" required>
+
+                    <i class="fa fa-exclamation-triangle" id="em"></i>
+                    <br>
+                    <input type="text" name="phone" placeholder="Phone" id="phone">
+
+                    <i class="fa fa-exclamation-triangle" id="ph"></i>
+                    <br>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <br>
+                    <button>Send</button>
+                </form>
+             </div>
+        </div>
+        <!--End Of contact-->
+        
+        <div id="map"></div>
+        
+        <!--contact info--> 
+        <div class="contact-info"> 
+            <h3>Contact info</h3>
+            <p> E-mail : WEB4U@gmail.com</p>
+            <p> Mobile : 01113200245</p>
+            <p> Web : WEB4U.com</p>
+        </div>
+        <!--end of contact info-->
+        
+        <!--Start Of Footer-->
+        <div class="footer">
+            <a href="#"><i class="fa fa-facebook-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-youtube-square fa-5x"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-5x"></i></a>
+            <br><br>
+            <img src="images/Logo_1502808088412.png" alt="logo-image" width="180px" height="70px">
+            <br>
+            Design by Ahmed Abd ELhafiz. Copyright © 2017. All Rights Reserved
+        </div>
+        <!--End Of Footer-->
+        
+        <script>
+            function openMenu() 
+            {
+                var x = document.getElementById("navbar");
+                
+                x.style.transform = "scale(1)";
+                
+                x.style.transition = ".5s";
+                
+                var hide = document.getElementById("my-menu");
+                
+                hide.style.opacity = "0";
+            }
+            function closeMenu() 
+            {
+                var x = document.getElementById("navbar");
+                
+                x.style.transform = "scale(0)";
+                
+                var hide = document.getElementById("my-menu");
+                
+                hide.style.opacity = "1";
+            } 
+            
+            
+         /*Form Rules*/
+             var u = document.getElementById("username");
+            var iu = document.getElementById("user");
+            
+            var p = document.getElementById("password");
+            var ip = document.getElementById("pass");
+            
+            var e = document.getElementById("email");
+            var ie = document.getElementById("em");
+            
+            var ph = document.getElementById("phone");
+            var iph = document.getElementById("ph");
+            
+            u.onblur = function () 
+            {
+                
+                if(isFinite(u.value) || u.value.length > 20 || u.value.includes("0") || u.value.includes("1") || u.value.includes("2") || u.value.includes("3") || u.value.includes("4") || u.value.includes("5") || u.value.includes("6") || u.value.includes("7") || u.value.includes("8") || u.value.includes("9")) 
+                    {
+                        iu.style.opacity = "1";
+                        
+                        iu.title = "User Can not Include Number or More Than 20 Letters & can not Be Null";
+                        
+                        u.focus();
+                        
+                        u.select();
+                    }
+                else 
+                {
+                    
+                        iu.style.opacity = "1";
+                    
+                        iu.className = "fa fa-check-square";
+                        
+                        p.focus();
+                }
+            }
+        
+            ip.onclick = function() 
+            {
+                
+                if(ip.className === "fa fa-eye-slash") 
+                {
+                    
+                    p.setAttribute("type", "text");
+                    
+                    ip.className = "fa fa-eye";
+                    
+                    ip.title = "Hide Password";
+                    
+                    p.focus();
+                }
+                
+                else 
+                {
+                    
+                    p.setAttribute("type", "password");
+                    
+                    ip.className = "fa fa-eye-slash";
+                    
+                    ip.title = "Show Password";
+                    
+                    p.focus();
+                } 
+            }
+            
+        
+            e.onblur = function() 
+            {
+                
+                if(e.value.includes("@") && e.value.includes(".") && e.value.length > 5)
+                    {
+                        ie.style.opacity = "1";
+                    
+                        ie.className = "fa fa-check-square";
+                        
+                        ph.focus();
+                    }
+                else 
+                {
+                    
+                        ie.style.opacity = "1";
+                        
+                        ie.title = "Email Does not Include (@) or (.) & Must be More Than 5 letters ";
+                        
+                        e.focus();
+                        
+                        e.select();
+                }
+                
+            }
+            
+          ph.onblur =  function () 
+            {
+                if(isNaN(ph.value) || ph.value.length < 10) 
+                    {
+                        iph.style.opacity = "1";
+                        
+                        iph.title = "Phone Must Be > 10 Numbers";
+                        
+                        ph.focus();
+                        
+                        ph.select(); 
+                    }
+                else 
+                    {
+                        iph.style.opacity = "1";
+                    
+                        iph.className = "fa fa-check-square";
+                    }
+            }
+        /*endForm Rules*/
+        </script>
+        
+        
+         <script>
+          function initMap() {
+            var myLocation = {
+                lat: 28.123284,
+                lng: 30.734760
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: myLocation,
+                styles:[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#242f3e"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#746855"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#242f3e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+                  {
+                    "color": "#d59563"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#d59563"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#263c3f"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#6b9a76"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#38414e"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                  {
+                    "color": "#212a37"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9ca5b3"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#746855"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                  {
+                    "color": "#1f2835"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#f3d19c"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#2f3948"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit.station",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#d59563"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#17263c"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#515c6d"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#17263c"
+                  }
+                ]
+              }
+            ]
+            });
+            var marker = new google.maps.Marker({
+              position: myLocation,
+              map: map
+            });
+                
+          }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3AQ9ROg3BxlaC3SdcicXJ2d4-f18mDSc&callback=initMap">
+    </script>
+    </body>
+</html>
